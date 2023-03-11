@@ -33,7 +33,6 @@ RUN rm -rf /usr/share/php /usr/share/php8 /usr/src/* /usr/local/bin/phpdbg \
     && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
     && chmod +x /usr/local/bin/start-container \
     && echo http://dl-2.alpinelinux.org/alpine/edge/community/ >> /etc/apk/repositories \
-    && apk --no-cache add shadow \
-    && usermod -u $WWWUSER www-data
+    && apk --no-cache add shadow
 
 ENTRYPOINT ["start-container"]
