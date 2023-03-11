@@ -1,4 +1,4 @@
-FROM php:8.1-rc-cli-alpine3.14
+FROM php:8.2-rc-cli-alpine3.17
 
 LABEL maintainer="Neo Ighodaro"
 
