@@ -1,6 +1,6 @@
 {
-    "name": "neo/little-sail",
-    "description": "Smaller Alpine based image for Laravel Sail runtimes",
+    "name": "ramaID/little-sail",
+    "description": "Unofficial, smaller Alpine based image for Laravel Sail runtimes",
     "keywords": ["laravel", "docker", "neo", "little-sail"],
     "license": "MIT",
     "support": {
