@@ -22,7 +22,7 @@ RUN set -eux; \
     # Install persistent / runtime deps
     && apk --update add --no-cache tzdata gnupg su-exec zip unzip git supervisor sqlite libcap nodejs npm \
     # Install PHP extensions
-    && install-php-extensions pcntl ldap redis intl soap imap pdo_mysql pcov msgpack bcmath igbinary gd zip opcache @composer
+    && install-php-extensions pcntl ldap redis intl soap imap pdo pdo_pgsql pdo_mysql pcov msgpack bcmath igbinary gd zip opcache @composer
 
 # Clean up
 RUN rm -rf /usr/share/php /usr/share/php8 /usr/src/* /usr/local/bin/phpdbg \
